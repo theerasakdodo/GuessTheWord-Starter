@@ -56,9 +56,7 @@ class GameFragment : Fragment() {
        Log.i("GameFragment","Called ViewModelProvisers.of")
         viewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
         /** Setting up LiveData observation relationship **/
-        viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
-            binding.scoreText.text = newScore.toString()
-        })
+      
         /** Setting up LiveData observation relationship **/
 
 
