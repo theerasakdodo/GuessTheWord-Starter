@@ -86,17 +86,13 @@ class GameFragment : Fragment() {
 
     /** Methods for buttons presses **/
 
+    /** Methods for buttons presses **/
     private fun onSkip() {
         viewModel.onSkip()
-        updateWordText()
-        updateScoreText()
     }
     private fun onCorrect() {
         viewModel.onCorrect()
-        updateScoreText()
-        updateWordText()
     }
-
     /**
      * Moves to the next word in the list
      */
